@@ -3,9 +3,10 @@ static const char *user  = "nobody";
 static const char *group = "nogroup";
 
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "black",     /* after initialization */
+	[INIT] =  "black",     /* after initialization */
 	[INPUT] =  "#005577",   /* during input */
 	[FAILED] = "#CC3333",   /* wrong password */
+	[CAPS] = "#FFA500",         /* CapsLock on */
 };
 
 /* treat a cleared input like a wrong password (color) */
@@ -37,4 +38,4 @@ static const int blurRadius=0;
 /*Enable Pixelation*/
 #define PIXELATION
 /*Set pixelation radius*/
-static const int pixelSize=24;
+static const int pixelSize=30;
